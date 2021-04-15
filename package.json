@@ -1,6 +1,6 @@
 {
   "name": "react-relaxed",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "React Hooks for debouncing and throttling inputs",
   "author": "Noah Falk",
   "license": "MIT",
@@ -25,7 +25,6 @@
     "debounce",
     "throttle"
   ],
-  "dependencies": {},
   "peerDependencies": {
     "react": "^16.9.0"
   },
