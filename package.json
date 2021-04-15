@@ -1,0 +1,44 @@
+{
+  "name": "react-relaxed",
+  "version": "0.2.1",
+  "description": "React Hooks for debouncing and throttling inputs",
+  "author": "Noah Falk",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "bugs": {
+    "url": "https://github.com/noahflk/react-relaxed/issues"
+  },
+  "homepage": "https://github.com/noahflk/react-relaxed#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noahflk/react-relaxed.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "debounce",
+    "throttle"
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/runtime": "^7.3.1",
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@types/react": "^16.7.22",
+    "react": "^16.9.0",
+    "rollup": "^2.22.1",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "typescript": "^3.2.4"
+  }
+}
