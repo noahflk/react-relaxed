@@ -226,7 +226,7 @@ const [throttledValue] = useThrottle(value, delay, {
 ### useThrottleState
 
 ```js
-const [value, setValue, throttledValue] = useDebounceState(
+const [value, setValue, throttledValue] = useThrottleState(
   initialValue,
   delay,
   {
