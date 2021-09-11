@@ -34,7 +34,7 @@ yarn add react-relaxed
 Delays updating the returned `debouncedValue` variable until a given number of miliseconds have elapsed since the last time the `value` argument was changed.
 
 ```jsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDebounce } from "react-relaxed";
 
 const App = () => {
@@ -54,14 +54,10 @@ const App = () => {
 With `useDebounceState` you do not need a seperate `useState` hook to keep track of the state. Apart form that, it's the same as `useDebounce`.
 
 ```jsx
-import React from "react";
 import { useDebounceState } from "react-relaxed";
 
 const App = () => {
-  const [value, setValue, debouncedValue] = useDebounceState(
-    "initial value",
-    500
-  );
+  const [value, setValue, debouncedValue] = useDebounceState("initial value", 500);
 
   return (
     <div>
@@ -78,7 +74,7 @@ const App = () => {
 The returned `throttledValue` gets updated at must once every given number of miliseconds, assuming the `value` argument changes more often than that.
 
 ```jsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { useThrottle } from "react-relaxed";
 
 const App = () => {
@@ -98,14 +94,10 @@ const App = () => {
 With `useThrottleState` you do not need a seperate `useState` hook to keep track of the state. Apart form that, it's the same as `useThrottle`.
 
 ```jsx
-import React from "react";
 import { useThrottleState } from "react-relaxed";
 
 const App = () => {
-  const [value, setValue, throttledValue] = useThrottleState(
-    "initial value",
-    500
-  );
+  const [value, setValue, throttledValue] = useThrottleState("initial value", 500);
 
   return (
     <div>
@@ -155,16 +147,12 @@ const [debouncedValue] = useDebounce(value, delay, {
 ### useDebounceState
 
 ```js
-const [value, setValue, debouncedValue] = useDebounceState(
-  initialValue,
-  delay,
-  {
-    onChange,
-    leading,
-    trailing,
-    maxWait,
-  }
-);
+const [value, setValue, debouncedValue] = useDebounceState(initialValue, delay, {
+  onChange,
+  leading,
+  trailing,
+  maxWait,
+});
 ```
 
 #### Returns
@@ -226,15 +214,11 @@ const [throttledValue] = useThrottle(value, delay, {
 ### useThrottleState
 
 ```js
-const [value, setValue, throttledValue] = useThrottleState(
-  initialValue,
-  delay,
-  {
-    onChange,
-    leading,
-    trailing,
-  }
-);
+const [value, setValue, throttledValue] = useThrottleState(initialValue, delay, {
+  onChange,
+  leading,
+  trailing,
+});
 ```
 
 #### Returns
