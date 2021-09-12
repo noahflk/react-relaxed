@@ -1,0 +1,43 @@
+html,
+body {
+  font-family: "Inter";
+  font-size: 20px;
+  height: 100%;
+  margin: 0;
+  background-color: #16171b;
+  color: #a0c5fc;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+input {
+  color: #a0c5fc;
+  width: 350px;
+  padding: 14px;
+  border: 0;
+  font-size: 20px;
+  background-color: #272a33;
+  border-radius: 5px;
+}
+
+table {
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  text-align: end;
+}
