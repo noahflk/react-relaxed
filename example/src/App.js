@@ -8,6 +8,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <h1>react-relaxed Demo</h1>
       <div>
         <input value={value} onChange={(event) => setValue(event.target.value)} />
         <table>
