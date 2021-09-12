@@ -1,6 +1,6 @@
-<h2 align="center">
-  React Relaxed
-</h2>
+<h1 align="center">
+  react-relaxed 🐌 
+</h1>
 
 <p align="center">
   React Hooks for debouncing and throttling inputs or any other changing value
@@ -18,7 +18,7 @@
 ### NPM
 
 ```
-npm install --save react-relaxed
+npm install react-relaxed
 ```
 
 ### Yarn
@@ -85,7 +85,7 @@ const App = () => {
     <div>
       <input value={value} onChange={(event) => setValue(event.target.value)} />
       <p>{value}</p>
-      <p>{debouncedValue}</p>
+      <p>{throttledValue}</p>
     </div>
   );
 };
@@ -103,7 +103,7 @@ const App = () => {
     <div>
       <input value={value} onChange={(event) => setValue(event.target.value)} />
       <p>{value}</p>
-      <p>{debouncedValue}</p>
+      <p>{throttledValue}</p>
     </div>
   );
 };
@@ -248,6 +248,10 @@ const [value, setValue, throttledValue] = useThrottleState(initialValue, delay, 
 ## Other solutions
 
 [use-debounce](https://github.com/xnimorz/use-debounce)
+
+## Credits
+
+This package used [create-react-hook](https://github.com/Hermanya/create-react-hook) CLI for setting up the build proccess.
 
 ## License
 
