@@ -132,12 +132,12 @@ const [debouncedValue] = useDebounce(value, delay, {
 
 #### Returns
 
-- `debouncedValue: any`
+- `debouncedValue: T = any`
   - The debounced value
 
 #### Arguments
 
-- `value: any`
+- `value: T = any`
   - Input value that gets debounced
 - `delay: number`
   - Number of miliseconds that must have elapsed since the last time `value` was changed before `debouncedValue` gets updated
@@ -165,16 +165,16 @@ const [value, setValue, debouncedValue] = useDebounceState(initialValue, delay, 
 
 #### Returns
 
-- `value: any`
+- `value: T = any`
   - Value state
 - `setValue: React.SetStateAction`
   - Sets / updates value state
-- `debouncedValue: any`
+- `debouncedValue: T = any`
   - The debounced value
 
 #### Arguments
 
-- `initialValue: any`
+- `initialValue: T = any`
   - Initial value for state
 - `delay: number`
   - Number of miliseconds that must have elapsed since the last time `value` was changed before `debouncedValue` gets updated
@@ -201,12 +201,12 @@ const [throttledValue] = useThrottle(value, delay, {
 
 #### Returns
 
-- `throttled: any`
+- `throttled: T = any`
   - The throttled value
 
 #### Arguments
 
-- `value: any`
+- `value: T = any`
   - Input value that gets throttled
 - `delay: number`
   - Number of miliseconds between every update of `throttledValue`, provided `value` argument changes more often than that
@@ -231,16 +231,16 @@ const [value, setValue, throttledValue] = useThrottleState(initialValue, delay, 
 
 #### Returns
 
-- `value: any`
+- `value: T = any`
   - Value state
 - `setValue: React.SetStateAction`
   - Sets / updates value state
-- `throttled: any`
+- `throttled: T = any`
   - The throttled value
 
 #### Arguments
 
-- `initialValue: any`
+- `initialValue: T = any`
   - Initial value for state
 - `delay: number`
   - Number of miliseconds that must have elapsed since the last time `value` was changed before `throttledValue` gets updated
