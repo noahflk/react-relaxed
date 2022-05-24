@@ -13,12 +13,12 @@
     "npm": ">=5"
   },
   "bugs": {
-    "url": "https://github.com/noahflk/react-breakout/issues"
+    "url": "https://github.com/noahflk/react-relaxed/issues"
   },
-  "homepage": "https://github.com/noahflk/react-breakout#readme",
+  "homepage": "https://github.com/noahflk/react-relaxed#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noahflk/react-breakout.git"
+    "url": "git+https://github.com/noahflk/react-relaxed.git"
   },
   "keywords": [
     "react",
